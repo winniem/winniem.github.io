@@ -1,1 +1,133 @@
-Hellow World
+<!DOCTYPE html>
+<html lang="en">
+<title>Winnie Mui</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+/* Icon CSS TODO: separate file*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+</style>
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Winnie<br>Mui</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <!--a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a--> 
+    <a href="#keyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customizable Keyboard</a> 
+    <a href="#snowbots" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Snowbots</a> 
+    <a href="#microscope" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">STM Upgrade</a> 
+    <a href="#pong" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pong</a> 
+    <a href="mailto:muixwinnie@gmail.com"><i class="fa fa-envelope"></i></a>
+  	<a href="https://www.linkedin.com/in/winniemui/"><i class="fa fa-linkedin"></i></a>
+    <!--a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a-->
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Winnie Mui</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo w3-text-gray"><b>Winnie Mui</b></h1>
+    <!--h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1-->
+    <hr style="width:100px;border:5px solid grey" class="w3-round">
+  </div>
+  
+  <!-- Keyboard -->
+  <div class="w3-container" id="keyboard" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Customizable Keyboard</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>The customizable keyboard was a self-sponsored capstone project I worked on with two of my friends. 
+	Inspired by the difficulties multilingual people face when switching keyboard languages we decided to investigate 
+	whether it would be possible to design a keyboard whose individual keys had customizable displays. This would allow
+	for the display of the key to update according to its output when the keyboard layout was changed.</p>
+    <p>In the four months we were given we managed to create a prototype
+    </p>
+  </div>
+  
+  <!-- Snowbots -->
+  <div class="w3-container" id="snowbots" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Snowbots</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>Information about snowbots, including pictures and awards?
+    </p>
+  </div>
+
+  <!-- Microscope -->
+  <div class="w3-container" id="microscope" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Scanning Tunneling Microscope Upgrade</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>Information about microscope capstone project?
+    </p>
+  </div>
+
+  <!-- Pong -->
+  <div class="w3-container" id="pong" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-gray"><b>Pong</b></h1>
+    <hr style="width:50px;border:5px solid gray" class="w3-round">
+    <p>random gif of automatic pong? Or something else software</p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-blue-grey w3-container w3-padding-32" style="margin-top:75x;padding-right:58px">
+	<p class="w3-center">
+  <a href="mailto:muixwinnie@gmail.com"><i class="fa fa-envelope"></i></a>
+  <a href="https://www.linkedin.com/in/winniemui/"><i class="fa fa-linkedin"></i></a></p>
+<p class="w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
