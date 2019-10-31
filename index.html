@@ -25,6 +25,19 @@ body {font-size:16px;}
   opacity: 0.7;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure figcaption {
+    text-align: center;
+	font-size: 0.95em;
+}
+
+ol { display: inline-block; text-align: left; }
+
 </style>
 
 <body>
@@ -33,14 +46,14 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Winnie<br>Mui</b></h3>
+    <h3 class="w3-padding-64"><b>Winnie Mui</b></h3>
   </div>
   <div class="w3-bar-block">
     <!--a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a--> 
     <a href="#keyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Customizable Keyboard</a> 
     <a href="#snowbots" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Snowbots</a> 
     <a href="#microscope" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">STM Upgrade</a> 
-    <a href="#pong" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pong</a> 
+    <!--a href="#pong" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pong</a--> 
     <a href="mailto:muixwinnie@gmail.com"><i class="fa fa-envelope"></i></a>
   	<a href="https://www.linkedin.com/in/winniemui/"><i class="fa fa-linkedin"></i></a>
     <!--a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a-->
@@ -57,7 +70,7 @@ body {font-size:16px;}
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="w3-main" style="margin-left:340px;margin-right:80px">
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
@@ -89,27 +102,56 @@ body {font-size:16px;}
 	member and eventually transitioning into a mechanical lead and co-captain. UBC Snowbots is a student design team that competed 
 	in a variety of autonomous robot competitions. The main competition we attended was the intelligent ground vehicle competition 
 	(<a href="http://www.igvc.org/">IGVC</a>) where the goal was to create a robot capable of navigating through an obstacle from 
-	one GPS waypoint to another autonomously. Our 2016 design report can be found <a href="https://github.com/winniem/winniem.github.io/blob/master/2016_IGVC_Design_Report">here</a>.</p>
-    <p>During my time on the team we also expanded to attend another competition, the ION autonomous snowplow competition, where we were required 
-	to reconfigure our robot to autonomously plow a field of snow. This required modifying our robot to handle low temperatures and installing 
+	one GPS waypoint to another autonomously. Our 2016 design report can be found <a href="https://github.com/winniem/winniem.github.io/blob/master/2016_IGVC_Design_Report.pdf">here</a>.</p>
+	<figure>
+	 <img src="Snowflake.JPG" alt="Snowflake"/ class="center">
+	 <figcaption>
+	 A picture of our 2016 robot, Snowflake.
+	 </figcaption>
+	</figure>
+    <p>During my time on the team we also expanded to attend another competition, the Institute of Navigation's autonomous snowplow competition (<a href="http://www.autosnowplow.com/welcome.html">ION ASC</a>)
+	, where we were required to reconfigure our robot to autonomously plow a field of snow. This required modifying our robot to handle low temperatures and installing 
 	stronger motors and a plow to plow snow. 
-TODO: picture of elsa
     </p>
+	<figure>
+	 <img src="Elsa.JPG" alt="Elsa" class="center"/>
+	 <figcaption>
+	 A picture of our robot configured with a snowplow at ION ASC 2016.
+	 </figcaption>
+	</figure>
   </div>
 
   <!-- Microscope -->
   <div class="w3-container" id="microscope" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-gray"><b>Scanning Tunneling Microscope Upgrade</b></h1>
     <hr style="width:50px;border:5px solid gray" class="w3-round">
-    <p>My second capstone project involved the upgrade of a scanning tunneling microscope (STM) for the UBC Laboratory of Atomic Imaging Research. The STM was initially designed as a faster lower resolution microscope to be used in open air for checking the quality of samples. Driven by a desire for higher quality scans we were tasked with designing and building a vacuum chamber and accompanying sample transfer mechanism. TODO: image of transfer. gif of sample transfer?</p>
+    <p>My second capstone project involved the upgrade of a scanning tunneling microscope (STM) for the UBC Laboratory of Atomic Imaging Research. 
+	The STM was initially designed as a faster lower resolution microscope to be used in open air for checking the quality of samples. Driven by a 
+	desire for higher quality scans we were tasked with designing and building a vacuum chamber and accompanying sample transfer mechanism. By the end
+	of our four month project we were able to reach pressures of 2.5 x 10<sup>-5</sup> mBar and had achieved a successful sample transfer using our
+	custom transfer mechanism.</p>
+	<figure>
+	 <img src="STM_Side_Annotated.JPG" alt="STM Side View" style="width:750px;height:400px;" class="center"/>
+	 <figcaption>
+		<ol>
+		Solidworks rendering of the final design. 
+		  <li>Mechanism to secure sample scanning platform during sample transfer.</li>
+		  <li>Load lock chamber to maintain internal pressure during sample transfers.</li>
+		  <li>Sample transfer arm.</li>
+		  <li>Cleaving mechanism to reveal uncontaminated scanning surface of sample.</li>
+		  <li>Vacuum pump.</li>
+		</ol>
+	 </figcaption>
+	</figure>
   </div>
 
   <!-- Pong -->
+  <!--
   <div class="w3-container" id="pong" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-gray"><b>Pong</b></h1>
     <hr style="width:50px;border:5px solid gray" class="w3-round">
     <p>random gif of automatic pong? Or something else software</p>
-  </div>
+  </div> -->
 
 <!-- End page content -->
 </div>
